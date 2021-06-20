@@ -2,16 +2,13 @@ package com.task.artemisdemo.service;
 
 import com.task.artemisdemo.model.Message;
 import com.task.artemisdemo.repository.ReportRepository;
-import com.task.artemisdemo.util.QueuesUtil;
-import com.task.artemisdemo.util.ValidationUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import static com.task.artemisdemo.util.QueuesUtil.*;
+import static com.task.artemisdemo.util.QueuesUtil.getAll;
 import static com.task.artemisdemo.util.ValidationUtil.checkNotFoundWithId;
 import static org.springframework.util.Assert.isTrue;
 import static org.springframework.util.Assert.notNull;

@@ -1,7 +1,6 @@
 package com.task.artemisdemo.util;
 
 import com.task.artemisdemo.util.exception.NotFoundException;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 
 public class ValidationUtil {
     private ValidationUtil() {

@@ -17,12 +17,12 @@ services:
     ports:
       - 5432:5432
     volumes:
-    - ./data:var/lib/postgresql/data/pgdata
+    - ./data:/var/lib/postgresql/data/pgdata
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_DB=reportsdb
-      - PGDATA=var/lib/postgresql/data/pgdata
+      - PGDATA=/var/lib/postgresql/data/pgdata
     restart: always
 
   myartemis:
