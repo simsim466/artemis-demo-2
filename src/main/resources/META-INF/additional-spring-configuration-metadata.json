@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "InTopics",
+      "type": "java.lang.String",
+      "description": "Description for InTopics."
+  }
+] }
